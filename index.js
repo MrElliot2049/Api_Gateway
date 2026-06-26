@@ -46,6 +46,12 @@ app.use(
   }),
 );
 
+app.get('/home',(req, res) => {
+    return res.status(200).json({
+        message:'Deployment Done'
+    })
+});
+
 app.listen(PORT, () => {
     console.log(`Server started listening on ${PORT}`);
 })
